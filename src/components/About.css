@@ -1,0 +1,24 @@
+#about__title {
+  text-align: center;
+  padding: 75px 0 75px 0;
+}
+
+#about__container {
+  width: 100%;
+}
+
+#headshot {
+  width: 175px;
+  height: 230px;
+}
+
+#skills__row {
+  margin-top: 100px;
+}
+
+#skill__table tr {
+}
+
+p {
+  color: inherit !important;
+}

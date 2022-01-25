@@ -1,0 +1,55 @@
+#work__btn__icon {
+  padding-left: 10px;
+  transition: 0.5s ease-in-out;
+}
+
+#work__btn {
+  background-color: transparent;
+  padding: 10px;
+  font-size: 22px;
+  font-weight: 400;
+  border: 2px solid white;
+  color: white;
+}
+
+#work__btn:hover {
+  background-color: #343a40;
+  transition: 0.5s ease-in-out;
+  border: 2px solid #343a40;
+}
+
+button:hover #work__btn__icon {
+  -ms-transform: rotate(90deg); /* IE 9 */
+  -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+  transform: rotate(90deg);
+  transition: 0.5s ease-in-out;
+}
+
+#header__container {
+  height: 100vh;
+  margin-bottom: -4px;
+}
+
+#header__inner__container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+#bg-video {
+  object-fit: cover;
+  height: 100vh;
+  z-index: -2;
+}
+
+#header__inner__div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  color: white;
+}

@@ -1,0 +1,22 @@
+#project__title {
+  text-align: center;
+  padding: 75px 0 75px 0;
+}
+.project__button {
+  padding: 10px;
+  background-color: transparent;
+  border: 2px solid #425664;
+  transition: 0.5s ease-in-out;
+  font-weight: 400;
+}
+
+.project__button:hover {
+  background-color: #425664;
+  border: 2px solid #425664;
+  color: white;
+  transition: 0.5s ease-in-out;
+}
+
+.card__title {
+  font-size: 22px;
+}

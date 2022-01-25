@@ -1,0 +1,64 @@
+.custom-shape-divider-top-1643056010 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1643056010 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 127px;
+}
+
+.custom-shape-divider-top-1643056010 .shape-fill {
+  fill: #ffffff;
+}
+
+.contact__input input,
+textarea {
+  min-width: 400px;
+  margin-top: 2px;
+  background-color: #dee2e6;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+}
+
+.contact__input:focus input,
+textarea {
+  outline: none !important;
+  border: none !important;
+  border-width: 0px !important;
+}
+
+#email:focus {
+  outline: none;
+}
+
+.contact__input textarea {
+  min-height: 200px;
+}
+
+#contact__btn {
+  background-color: transparent;
+  padding: 5px 20px 5px 20px;
+  font-size: 22px;
+  font-weight: 400;
+  border: 2px solid white;
+  color: white;
+  transition: 0.5s ease-in-out;
+}
+
+#contact__btn:hover {
+  transition: 0.5s ease-in-out;
+  background-color: #ffffff;
+  color: #425664;
+}
+
+#contact__container {
+  padding-bottom: 200px;
+}
