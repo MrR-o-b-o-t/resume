@@ -1,7 +1,6 @@
 import "./Header.css"
 import React from "react"
 import { MDBIcon } from "mdb-react-ui-kit"
-import video1 from "../images/stars.mp4"
 
 export default function Header() {
   return (
