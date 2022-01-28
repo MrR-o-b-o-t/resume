@@ -13,7 +13,7 @@ export default function Header() {
         loop
         autoPlay
         controls={false}
-        playsInline
+        playsinline
         muted
         id="bg-video"
         src={stars}
