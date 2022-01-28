@@ -9,22 +9,16 @@ export default function Header() {
       className="d-flex justify-content-center align-items-center"
       id="header__container"
     >
-      <div
-        dangerouslySetInnerHTML={{
-          __html: `
-          <video
-          loop
-          autoPlay
-          controls={false}
-          playsinline
-          muted
-          id="bg-video"
-          src={stars}
-          type="video/mp4"
-        />,
-        `,
-        }}
-      ></div>
+      <video
+        loop={true}
+        autoPlay
+        controls={false}
+        playsInline
+        muted
+        id="bg-video"
+        src={stars}
+        type="video/mp4"
+      />
       <div id="header__inner__div">
         <h1>
           Hello, I'm <span>Sam Kautz</span>.
