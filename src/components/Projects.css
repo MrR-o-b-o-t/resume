@@ -20,3 +20,9 @@
 .card__title {
   font-size: 22px;
 }
+
+@media only screen and (max-width: 770px) {
+  .portfolio__cards {
+    margin-bottom: 50px;
+  }
+}

@@ -61,4 +61,5 @@ textarea {
 
 #contact__container {
   padding-bottom: 200px;
+  overflow: hidden;
 }

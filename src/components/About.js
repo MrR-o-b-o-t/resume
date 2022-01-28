@@ -101,7 +101,7 @@ export default function About() {
               experiences.
             </p>
           </MDBCol>
-          <MDBCol size="md" className="mt-3">
+          <MDBCol id="skills__table__col" size="md">
             <SkillBars skills={skillsData} />
           </MDBCol>
         </MDBRow>

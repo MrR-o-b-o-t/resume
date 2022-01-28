@@ -36,7 +36,7 @@ export default function Projects() {
       >
         CONTACT
       </h1>
-      <div className="text-center mt-5">
+      <div id="contact__fields" className="text-center mt-5">
         <MDBRow>
           <form onSubmit={handleSubmit}>
             <MDBCol className="contact__input" md="12">

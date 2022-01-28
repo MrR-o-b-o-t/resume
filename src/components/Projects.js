@@ -30,7 +30,7 @@ export default function Projects() {
         </div>
         <MDBContainer>
           <MDBRow className="row-cols-1 row-cols-md-3 g-4">
-            <MDBCol>
+            <MDBCol className="portfolio__cards">
               <MDBCard className="h-100">
                 <MDBCardImage src={boePortfolio} alt="..." position="top" />
                 <MDBCardBody className="text-center">
@@ -46,7 +46,7 @@ export default function Projects() {
                 </MDBCardBody>
               </MDBCard>
             </MDBCol>
-            <MDBCol>
+            <MDBCol className="portfolio__cards">
               <MDBCard className="h-100">
                 <MDBCardImage src={titusDocConvert} alt="..." position="top" />
                 <MDBCardBody className="text-center">
@@ -60,7 +60,7 @@ export default function Projects() {
                 </MDBCardBody>
               </MDBCard>
             </MDBCol>
-            <MDBCol>
+            <MDBCol className="portfolio__cards">
               <MDBCard className="h-100">
                 <MDBCardImage src={yips} alt="..." position="top" />
                 <MDBCardBody className="text-center">
@@ -72,7 +72,7 @@ export default function Projects() {
                 </MDBCardBody>
               </MDBCard>
             </MDBCol>
-            <MDBCol>
+            <MDBCol className="portfolio__cards">
               <MDBCard className="h-100">
                 <MDBCardImage src={titusCms} alt="..." position="top" />
                 <MDBCardBody className="text-center">

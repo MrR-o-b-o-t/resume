@@ -28,28 +28,13 @@ button:hover #work__btn__icon {
 #header__container {
   height: 100vh;
   margin-bottom: -4px;
-}
-
-#header__inner__container {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: white;
-}
-
-#bg-video {
-  object-fit: cover;
-  height: 100vh;
-  z-index: -2;
+  background-color: #343a40;
+  z-index: -1;
 }
 
 #header__inner__div {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   z-index: 3;
   color: white;
+  width: 500px;
+  text-align: center;
 }
