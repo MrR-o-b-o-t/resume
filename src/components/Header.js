@@ -16,9 +16,9 @@ export default function Header() {
         playsInline
         muted
         id="bg-video"
-      >
-        <source src={stars} type="video/mp4" />
-      </video>
+        src={stars}
+        type="video/mp4"
+      />
       <div id="header__inner__div">
         <h1>
           Hello, I'm <span>Sam Kautz</span>.
