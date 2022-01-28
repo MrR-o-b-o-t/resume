@@ -1,6 +1,7 @@
 import "./Header.css"
 import React from "react"
 import { MDBIcon } from "mdb-react-ui-kit"
+import stars from "../images/stars.mp4"
 
 export default function Header() {
   return (
@@ -8,6 +9,9 @@ export default function Header() {
       className="d-flex justify-content-center align-items-center"
       id="header__container"
     >
+      <video loop autoPlay muted id="bg-video">
+        <source src={stars} type="video/mp4" />
+      </video>
       <div id="header__inner__div">
         <h1>
           Hello, I'm <span>Sam Kautz</span>.

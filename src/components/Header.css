@@ -27,14 +27,21 @@ button:hover #work__btn__icon {
 
 #header__container {
   height: 100vh;
-  margin-bottom: -4px;
-  background-color: #343a40;
-  z-index: -1;
 }
 
 #header__inner__div {
-  z-index: 3;
+  z-index: 2;
   color: white;
   width: 500px;
   text-align: center;
+}
+
+#bg-video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -5;
 }
