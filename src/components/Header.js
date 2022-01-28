@@ -9,7 +9,7 @@ export default function Header() {
       className="d-flex justify-content-center align-items-center"
       id="header__container"
     >
-      <video loop autoPlay muted id="bg-video">
+      <video loop autoPlay={true} playsInline muted id="bg-video">
         <source src={stars} type="video/mp4" />
       </video>
       <div id="header__inner__div">
