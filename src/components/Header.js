@@ -10,8 +10,8 @@ export default function Header() {
       id="header__container"
     >
       <video
-        loop={true}
-        autoPlay={true}
+        loop
+        autoPlay
         controls={false}
         playsInline
         muted
