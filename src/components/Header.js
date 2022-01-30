@@ -12,9 +12,9 @@ export default function Header() {
       <video
         loop={true}
         autoPlay
+        muted
         controls={false}
         playsInline
-        muted
         id="bg-video"
         src={stars}
         type="video/mp4"
