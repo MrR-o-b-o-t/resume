@@ -56,7 +56,7 @@ export default function About() {
         </div>
         <div className='d-flex justify-content-evenly'>
           <MDBRow>
-            <MDBCol size='md' className='text-center'>
+            <MDBCol size='md' className='text-center fadeIn'>
               <img src={rocket} alt='rocket' />
               <h2>FAST</h2>
               <p>
