@@ -52,7 +52,7 @@ export default function About() {
     <MDBContainer>
       <div id='about__container'>
         <div id='about__title'>
-          <h1 style={{ fontWeight: '600', fontSize: '48px' }}>ABOUT</h1>
+          <h1>ABOUT</h1>
         </div>
         <div className='d-flex justify-content-evenly'>
           <MDBRow>

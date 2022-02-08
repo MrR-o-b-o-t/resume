@@ -1,6 +1,14 @@
+#project__container {
+  background-color: #f7f7f7;
+  margin-top: 100px;
+  padding-bottom: 130px;
+}
+
 #project__title {
   text-align: center;
   padding: 75px 0 75px 0;
+  font-weight: 600;
+  font-size: 48px;
 }
 .project__button {
   padding: 10px;

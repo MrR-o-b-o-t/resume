@@ -17,16 +17,10 @@ import titusCms from '../images/titusCms.PNG'
 
 export default function Projects() {
   return (
-    <div
-      style={{
-        backgroundColor: '#F7F7F7',
-        marginTop: '100px',
-        paddingBottom: '130px',
-      }}
-    >
-      <div id='project__container'>
+    <div id='project__container'>
+      <div id='project__container__inner'>
         <div id='project__title'>
-          <h1 style={{ fontWeight: '600', fontSize: '48px' }}>PROJECTS</h1>
+          <h1>PROJECTS</h1>
         </div>
         <MDBContainer>
           <MDBRow className='row-cols-1 row-cols-md-3 g-4'>
@@ -81,7 +75,7 @@ export default function Projects() {
                     Titus CMS
                   </MDBCardText>
                   <MDBCardText className='mt-3'>
-                    React JS, MUI, Node.js, MangoDB, SQL
+                    React JS, MUI, Redux, Node.js, MangoDB
                   </MDBCardText>
                 </MDBCardBody>
               </MDBCard>

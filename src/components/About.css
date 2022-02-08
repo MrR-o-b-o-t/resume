@@ -31,3 +31,8 @@ p {
     margin-left: 0px;
   }
 }
+
+#about__title {
+  font-weight: 600;
+  font-size: 48px;
+}
