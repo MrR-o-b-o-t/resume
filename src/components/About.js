@@ -100,7 +100,7 @@ export default function About() {
               </p>
             </MDBCol>
             <MDBCol id='skills__table__col' size='md'>
-              <SkillBars skills={skillsData} />
+              <SkillBars skills={skillsData} animationDelay={4000} />
             </MDBCol>
           </MDBRow>
         </MDBContainer>
