@@ -44,7 +44,12 @@ export default function Projects() {
               <MDBCard className='h-100'>
                 <MDBCardImage src={titusDocConvert} alt='...' position='top' />
                 <MDBCardBody className='text-center'>
-                  <button className='project__button'>LEARN MORE</button>
+                  <a
+                    href='https://titus-doc-converter.herokuapp.com/'
+                    target='blank'
+                  >
+                    <button className='project__button'>LEARN MORE</button>
+                  </a>
                   <MDBCardText className='card__title mt-3'>
                     Titus Document Convert
                   </MDBCardText>
