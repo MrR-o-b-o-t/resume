@@ -14,6 +14,8 @@ import boePortfolio from '../images/boePortfolio.PNG'
 import titusDocConvert from '../images/titusDocConvert.PNG'
 import yips from '../images/yips.PNG'
 import titusCms from '../images/titusCms.PNG'
+import fbl from '../images/fbl.PNG'
+import jas from '../images/jas.PNG'
 
 export default function Projects() {
   return (
@@ -81,6 +83,38 @@ export default function Projects() {
                   </MDBCardText>
                   <MDBCardText className='mt-3'>
                     React JS, MUI, Redux, Node.js, MangoDB
+                  </MDBCardText>
+                </MDBCardBody>
+              </MDBCard>
+            </MDBCol>
+            <MDBCol className='portfolio__cards'>
+              <MDBCard className='h-100'>
+                <MDBCardImage src={fbl} alt='...' position='top' />
+                <MDBCardBody className='text-center'>
+                  <a href='https://forbesbarrentinelaw.com/' target='blank'>
+                    <button className='project__button'>LEARN MORE</button>
+                  </a>
+                  <MDBCardText className='card__title mt-3'>
+                    Forbes Barrentine Law
+                  </MDBCardText>
+                  <MDBCardText className='mt-3'>
+                    Wordpress, PHP, CSS
+                  </MDBCardText>
+                </MDBCardBody>
+              </MDBCard>
+            </MDBCol>
+            <MDBCol className='portfolio__cards'>
+              <MDBCard className='h-100'>
+                <MDBCardImage src={jas} alt='...' position='top' />
+                <MDBCardBody className='text-center'>
+                  <a href='https://johnsonandsons.net/' target='blank'>
+                    <button className='project__button'>LEARN MORE</button>
+                  </a>
+                  <MDBCardText className='card__title mt-3'>
+                    Johnson and Sons Commercial Floors
+                  </MDBCardText>
+                  <MDBCardText className='mt-3'>
+                    Wordpress, PHP, CSS
                   </MDBCardText>
                 </MDBCardBody>
               </MDBCard>
