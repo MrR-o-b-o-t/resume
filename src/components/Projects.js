@@ -37,7 +37,7 @@ export default function Projects() {
                     Bank of England Texas
                   </MDBCardText>
                   <MDBCardText className='mt-3'>
-                    React JS, Bootstrap, JavaScript, GSAP, CSS.
+                    React JS, Bootstrap, JavaScript, GSAP, CSS
                   </MDBCardText>
                 </MDBCardBody>
               </MDBCard>
