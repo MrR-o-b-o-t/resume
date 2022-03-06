@@ -94,9 +94,8 @@ export default function About() {
               />
               <h2 className='mt-2'>Who am I?</h2>
               <p>
-                I'm a Full-Stack Developer for Snax Media in Dallas, TX. I'm
-                passionate about creating intuitive, dynamic, & responsive user
-                experiences.
+                I'm a Front End Developer for USAA. I'm passionate about
+                creating intuitive, dynamic, & responsive user experiences.
               </p>
             </MDBCol>
             <MDBCol id='skills__table__col' size='md'>
