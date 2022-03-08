@@ -15,36 +15,43 @@ export default function About() {
       name: 'CSS',
       level: 90,
       color: '#6C757D',
+      duration: 9,
     },
     {
       name: 'HTML',
       level: 90,
       color: '#343A40',
+      duration: 9,
     },
     {
       name: 'React',
       level: 70,
       color: '#6C757D',
+      duration: 9,
     },
     {
       name: 'JavaScript',
       level: 70,
       color: '#343A40',
+      duration: 9,
     },
     {
       name: 'Node.js',
       level: 60,
       color: '#6C757D',
+      duration: 9,
     },
     {
       name: 'UI Design',
       level: 50,
       color: '#343A40',
+      duration: 9,
     },
     {
       name: 'SQL',
       level: 40,
       color: '#6C757D',
+      duration: 9,
     },
   ]
 
