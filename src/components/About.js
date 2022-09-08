@@ -6,7 +6,6 @@ import responsive from "../images/responsive.png";
 import intuitive from "../images/intuitive.png";
 import dynamic from "../images/dynamic.png";
 import headshot from "../images/headshot.jpg";
-import { FaBeer } from "react-icons/fa";
 import {
   DiNodejs,
   DiReact,
