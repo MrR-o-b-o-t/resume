@@ -93,7 +93,7 @@ export default function About() {
               </MDBCol>
               <MDBCol size="3" className="text-center ml-md-auto">
                 <DiNodejs className="FaStyles" />
-                <h2>NodeJs</h2>
+                <h2>Node.js</h2>
               </MDBCol>
               <MDBCol size="3" className="text-center ml-md-auto">
                 <DiPostgresql className="FaStyles" />
