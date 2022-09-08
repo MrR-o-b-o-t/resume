@@ -90,7 +90,7 @@ export default function About() {
               </MDBCol>
               <MDBCol size="3" className="text-center ml-md-auto">
                 <DiJavascript1 className="FaStyles" />
-                <h2>JS</h2>
+                <h2>Javascript</h2>
               </MDBCol>
               <MDBCol size="3" className="text-center ml-md-auto">
                 <DiNodejs className="FaStyles" />
