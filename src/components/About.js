@@ -1,11 +1,11 @@
 import "./About.css";
 import React from "react";
-import { MDBRow, MDBCol, MDBContainer } from "mdb-react-ui-kit";
 import rocket from "../images/rocket.png";
 import responsive from "../images/responsive.png";
 import intuitive from "../images/intuitive.png";
 import dynamic from "../images/dynamic.png";
 import headshot from "../images/headshot.jpg";
+import { Row, Container, Col } from "react-bootstrap";
 import {
   DiNodejs,
   DiReact,
@@ -19,43 +19,43 @@ import { SiCsharp } from "react-icons/si";
 
 export default function About() {
   return (
-    <MDBContainer>
+    <Container>
       <div id="about__container">
         <div id="about__title">
           <h1>ABOUT</h1>
         </div>
         <div className="d-flex justify-content-evenly">
-          <MDBRow>
-            <MDBCol size="md" className="text-center fadeIn">
+          <Row>
+            <Col size="md" className="text-center fadeIn">
               <img src={rocket} alt="rocket" />
               <h2>FAST</h2>
               <p>
                 Fast load times and lage free interaction is my highest priority
               </p>
-            </MDBCol>
-            <MDBCol size="md" className="text-center">
+            </Col>
+            <Col size="md" className="text-center">
               <img src={responsive} alt="responsive" />
               <h2>RESPONSIVE</h2>
               <p>My layouts will work on any device, big or small.</p>
-            </MDBCol>
-            <MDBCol size="md" className="text-center">
+            </Col>
+            <Col size="md" className="text-center">
               <img src={intuitive} alt="intuitive" />
               <h2>INTUITIVE</h2>
               <p>Strong preference for easy to use, intuitive UX/UI.</p>
-            </MDBCol>
-            <MDBCol size="md" className="text-center">
+            </Col>
+            <Col size="md" className="text-center">
               <img src={dynamic} alt="dynamic" />
               <h2>DYNAMIC</h2>
               <p>
                 Websites don't have to be static, I love making pages come to
                 life.
               </p>
-            </MDBCol>
-          </MDBRow>
+            </Col>
+          </Row>
         </div>
-        <MDBContainer>
-          <MDBRow around id="skills__row">
-            <MDBCol size="md" className="text-center">
+        <Container>
+          <Row around id="skills__row">
+            <Col size="md" className="text-center">
               <img
                 className="img-fluid rounded-pill"
                 id="headshot"
@@ -67,46 +67,46 @@ export default function About() {
                 I'm a Front End Developer for USAA. I'm passionate about
                 creating intuitive, dynamic, & responsive user experiences.
               </p>
-            </MDBCol>
-          </MDBRow>
+            </Col>
+          </Row>
           <div className="mt-5">
-            <MDBRow>
-              <MDBCol size="3" className="text-center ml-md-auto">
+            <Row className="grid">
+              <Col sm className="text-center">
                 <DiReact className="FaStyles" />
                 <h2>REACT</h2>
-              </MDBCol>
-              <MDBCol size="3" className="text-center ml-md-auto">
+              </Col>
+              <Col sm className="text-center">
                 <SiCsharp className="FaStyles" />
                 <h2>C#</h2>
-              </MDBCol>
-              <MDBCol size="3" className="text-center ml-md-auto">
+              </Col>
+              <Col sm className="text-center">
                 <DiHtml5 className="FaStyles" />
                 <h2>HTML5</h2>
-              </MDBCol>
-              <MDBCol size="3" className="text-center ml-md-auto">
+              </Col>
+              <Col sm className="text-center">
                 <DiCss3Full className="FaStyles" />
                 <h2>CSS3</h2>
-              </MDBCol>
-              <MDBCol size="3" className="text-center ml-md-auto">
+              </Col>
+              <Col sm className="text-center">
                 <DiJavascript1 className="FaStyles" />
                 <h2>Javascript</h2>
-              </MDBCol>
-              <MDBCol size="3" className="text-center ml-md-auto">
+              </Col>
+              <Col sm className="text-center">
                 <DiNodejs className="FaStyles" />
                 <h2>Node.js</h2>
-              </MDBCol>
-              <MDBCol size="3" className="text-center ml-md-auto">
+              </Col>
+              <Col sm className="text-center">
                 <DiPostgresql className="FaStyles" />
                 <h2>Postgres</h2>
-              </MDBCol>
-              <MDBCol size="3" className="text-center ml-md-auto">
+              </Col>
+              <div sm className="text-center">
                 <DiGit className="FaStyles" />
                 <h2>Git</h2>
-              </MDBCol>
-            </MDBRow>
+              </div>
+            </Row>
           </div>
-        </MDBContainer>
+        </Container>
       </div>
-    </MDBContainer>
+    </Container>
   );
 }
