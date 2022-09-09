@@ -71,38 +71,38 @@ export default function About() {
           </Row>
           <div className="mt-5">
             <Row className="grid">
-              <Col sm className="text-center">
+              <Col xs={12} md={3} className="text-center">
                 <DiReact className="FaStyles" />
                 <h2>REACT</h2>
               </Col>
-              <Col sm className="text-center">
+              <Col xs={12} md={3} className="text-center">
                 <SiCsharp className="FaStyles" />
                 <h2>C#</h2>
               </Col>
-              <Col sm className="text-center">
+              <Col xs={12} md={3} className="text-center">
                 <DiHtml5 className="FaStyles" />
                 <h2>HTML5</h2>
               </Col>
-              <Col sm className="text-center">
+              <Col xs={12} md={3} className="text-center">
                 <DiCss3Full className="FaStyles" />
                 <h2>CSS3</h2>
               </Col>
-              <Col sm className="text-center">
+              <Col xs={12} md={3} className="text-center">
                 <DiJavascript1 className="FaStyles" />
                 <h2>Javascript</h2>
               </Col>
-              <Col sm className="text-center">
+              <Col xs={12} md={3} className="text-center">
                 <DiNodejs className="FaStyles" />
                 <h2>Node.js</h2>
               </Col>
-              <Col sm className="text-center">
+              <Col xs={12} md={3} className="text-center">
                 <DiPostgresql className="FaStyles" />
                 <h2>Postgres</h2>
               </Col>
-              <div sm className="text-center">
+              <Col xs={12} md={3} className="text-center">
                 <DiGit className="FaStyles" />
                 <h2>Git</h2>
-              </div>
+              </Col>
             </Row>
           </div>
         </Container>
