@@ -16,11 +16,13 @@ import {
   DiHtml5,
 } from "react-icons/di";
 import { SiCsharp } from "react-icons/si";
+import { useTheme } from "../hooks/useTheme";
 
 export default function About() {
+  const { mode } = useTheme();
   return (
-    <Container>
-      <div id="about__container">
+    <Container className={mode}>
+      <div className="about__container">
         <div id="about__title">
           <h1>ABOUT</h1>
         </div>

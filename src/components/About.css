@@ -37,6 +37,11 @@ p {
   font-size: 48px;
 }
 
-.FaStyles{
+.FaStyles {
   font-size: 56px;
+}
+
+.dark {
+  background: #333;
+  color: white;
 }
