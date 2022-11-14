@@ -25,26 +25,26 @@ export default function About() {
       <div id="about__title">
         <h1>ABOUT</h1>
       </div>
-      <div className="d-flex justify-content-evenly">
+      <div className="d-flex justify-content-evenly p-3">
         <Row>
-          <Col size="md" className="text-center fadeIn">
+          <Col md className="text-center">
             <img src={rocket} alt="rocket" />
             <h2>FAST</h2>
             <p>
               Fast load times and lage free interaction is my highest priority
             </p>
           </Col>
-          <Col size="md" className="text-center">
+          <Col md className="text-center">
             <img src={responsive} alt="responsive" />
             <h2>RESPONSIVE</h2>
             <p>My layouts will work on any device, big or small.</p>
           </Col>
-          <Col size="md" className="text-center">
+          <Col md className="text-center">
             <img src={intuitive} alt="intuitive" />
             <h2>INTUITIVE</h2>
             <p>Strong preference for easy to use, intuitive UX/UI.</p>
           </Col>
-          <Col size="md" className="text-center">
+          <Col md className="text-center">
             <img src={dynamic} alt="dynamic" />
             <h2>DYNAMIC</h2>
             <p>
@@ -72,35 +72,35 @@ export default function About() {
         </Row>
         <div className="mt-5">
           <Row className="grid">
-            <Col xs={12} md={3} className="text-center">
+            <Col xs={12} md={3} className="text-center mb-3">
               <DiReact className="FaStyles" />
               <h2>REACT</h2>
             </Col>
-            <Col xs={12} md={3} className="text-center">
+            <Col xs={12} md={3} className="text-center mb-3">
               <SiCsharp className="FaStyles" />
               <h2>C#</h2>
             </Col>
-            <Col xs={12} md={3} className="text-center">
+            <Col xs={12} md={3} className="text-center mb-3">
               <DiHtml5 className="FaStyles" />
               <h2>HTML5</h2>
             </Col>
-            <Col xs={12} md={3} className="text-center">
+            <Col xs={12} md={3} className="text-center mb-3">
               <DiCss3Full className="FaStyles" />
               <h2>CSS3</h2>
             </Col>
-            <Col xs={12} md={3} className="text-center">
+            <Col xs={12} md={3} className="text-center mb-3">
               <DiJavascript1 className="FaStyles" />
               <h2>Javascript</h2>
             </Col>
-            <Col xs={12} md={3} className="text-center">
+            <Col xs={12} md={3} className="text-center mb-3">
               <DiNodejs className="FaStyles" />
               <h2>Node.js</h2>
             </Col>
-            <Col xs={12} md={3} className="text-center">
+            <Col xs={12} md={3} className="text-center mb-3">
               <DiPostgresql className="FaStyles" />
               <h2>Postgres</h2>
             </Col>
-            <Col xs={12} md={3} className="text-center">
+            <Col xs={12} md={3} className="text-center mb-3">
               <DiGit className="FaStyles" />
               <h2>Git</h2>
             </Col>

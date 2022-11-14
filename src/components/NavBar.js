@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
-import './NavBar.css'
+import React, { useState } from "react";
+import "./NavBar.css";
 import {
   MDBContainer,
   MDBNavbar,
@@ -9,41 +9,42 @@ import {
   MDBNavbarLink,
   MDBCollapse,
   MDBIcon,
-} from 'mdb-react-ui-kit'
+} from "mdb-react-ui-kit";
+import ThemeSelector from "./ThemeSelector";
 
 export default function App() {
-  const [showNav, setShowNav] = useState(false)
+  const [showNav, setShowNav] = useState(false);
 
   return (
-    <MDBNavbar sticky id='navBar' expand='md' dark>
+    <MDBNavbar sticky id="navBar" expand="md" dark>
       <MDBContainer fluid>
         <MDBNavbarToggler
-          type='button'
-          aria-expanded='false'
-          aria-label='Toggle navigation'
+          type="button"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
           onClick={() => setShowNav(!showNav)}
         >
-          <MDBIcon icon='bars' fas />
+          <MDBIcon icon="bars" fas />
         </MDBNavbarToggler>
         <MDBCollapse navbar show={showNav}>
           <MDBNavbarNav>
             <MDBNavbarItem>
-              <MDBNavbarLink href='#header__container'>HOME</MDBNavbarLink>
+              <MDBNavbarLink href="#header__container">HOME</MDBNavbarLink>
             </MDBNavbarItem>
             <MDBNavbarItem>
-              <MDBNavbarLink href='#about__container'>ABOUT</MDBNavbarLink>
+              <MDBNavbarLink href="#about__container">ABOUT</MDBNavbarLink>
             </MDBNavbarItem>
             <MDBNavbarItem>
-              <MDBNavbarLink href='#project__container'>
+              <MDBNavbarLink href="#project__container">
                 PORTFOLIO
               </MDBNavbarLink>
             </MDBNavbarItem>
             <MDBNavbarItem>
-              <MDBNavbarLink href='#contact__container'>CONTACT</MDBNavbarLink>
+              <MDBNavbarLink href="#contact__container">CONTACT</MDBNavbarLink>
             </MDBNavbarItem>
           </MDBNavbarNav>
         </MDBCollapse>
       </MDBContainer>
     </MDBNavbar>
-  )
+  );
 }
