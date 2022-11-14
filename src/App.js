@@ -7,9 +7,12 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import ThemeSelector from "./components/ThemeSelector";
 
+import { useTheme } from "./hooks/useTheme";
+
 function App() {
+  const { mode } = useTheme();
   return (
-    <div>
+    <div className={mode}>
       <Header />
       <NavBar />
       <ThemeSelector />
