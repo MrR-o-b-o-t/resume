@@ -10,7 +10,6 @@ import {
   MDBCollapse,
   MDBIcon,
 } from "mdb-react-ui-kit";
-import ThemeSelector from "./ThemeSelector";
 
 export default function App() {
   const [showNav, setShowNav] = useState(false);

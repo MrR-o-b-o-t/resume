@@ -1,8 +1,9 @@
 .mode-toggle img {
   width: 54px;
   height: 54px;
-  cursor: pointer;
   margin: 20px;
+  transition: 1s box-shadow;
+  cursor: pointer;
 }
 
 .mode-toggle {

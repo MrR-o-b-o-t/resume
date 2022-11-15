@@ -11,10 +11,9 @@ export default function ThemeSelector() {
   console.log(mode);
 
   return (
-    <div className="mode-toggle">
+    <div className="mode-toggle" onClick={toggle}>
       <img
         src={modeIcon}
-        onClick={toggle}
         alt="Theme selector button"
         style={{ filter: mode === "dark" ? "invert(100%)" : "invert(20%)" }}
       />
