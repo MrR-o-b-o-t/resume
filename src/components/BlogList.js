@@ -7,9 +7,8 @@ import Row from "react-bootstrap/Row";
 import "./BlogList.css";
 
 export default function BlogList({ blogs }) {
-  console.log(blogs);
   if (blogs.length === 0) {
-    return <div className="error">No recipes to load...</div>;
+    return <div className="error">No blog posts to load...</div>;
   }
 
   return (
