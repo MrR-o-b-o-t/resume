@@ -3,8 +3,9 @@
   padding: 75px 0 75px 0;
 }
 
-#about__container {
+.about__container {
   overflow: hidden;
+  margin-bottom: 70px;
 }
 
 #headshot {

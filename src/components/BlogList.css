@@ -3,5 +3,28 @@
   color: black !important;
 }
 
-.blog-row {
+.blog-cards {
+  min-height: 300px;
+}
+
+.blog-container {
+  background-color: #495057;
+  padding: 50px 0 100px 0;
+}
+
+#blog__btn {
+  background-color: transparent;
+  padding: 5px 20px 5px 20px;
+  font-size: 22px;
+  font-weight: 400;
+  border: 2px solid #425664;
+  border-radius: 0px;
+  color: black;
+  transition: 0.5s ease-in-out;
+}
+
+#blog__btn:hover {
+  transition: 0.5s ease-in-out;
+  background-color: #425664;
+  color: white;
 }

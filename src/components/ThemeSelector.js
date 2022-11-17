@@ -8,7 +8,6 @@ export default function ThemeSelector() {
   const toggle = () => {
     changeMode(mode === "dark" ? "light" : "dark");
   };
-  console.log(mode);
 
   return (
     <div className="mode-toggle" onClick={toggle}>
