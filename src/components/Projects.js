@@ -12,7 +12,7 @@ import {
 
 import boePortfolio from "../images/boePortfolio.PNG";
 import titusDocConvert from "../images/titusDocConvert.PNG";
-import yips from "../images/yips.PNG";
+import cherry from "../images/cherry.png";
 import titusCms from "../images/titusCms.PNG";
 import fbl from "../images/fbl.PNG";
 import jas from "../images/jas.PNG";
@@ -66,13 +66,17 @@ export default function Projects() {
             </MDBCol>
             <MDBCol className="portfolio__cards">
               <MDBCard className="h-100">
-                <MDBCardImage src={yips} alt="..." position="top" />
+                <MDBCardImage src={cherry} alt="..." position="top" />
                 <MDBCardBody className="text-center">
-                  <a href="https://yips.co/" target="blank">
+                  <a href="https://cherrycoatings.com/" target="blank">
                     <button className="project__button">LEARN MORE</button>
                   </a>
-                  <MDBCardText className="card__title mt-3">YIPS</MDBCardText>
-                  <MDBCardText className="mt-3">Liquid, CSS, HTML</MDBCardText>
+                  <MDBCardText className="card__title mt-3">
+                    Cherry Coatings
+                  </MDBCardText>
+                  <MDBCardText className="mt-3">
+                    Liquid, CSS, HTML, JS
+                  </MDBCardText>
                 </MDBCardBody>
               </MDBCard>
             </MDBCol>
