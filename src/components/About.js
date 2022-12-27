@@ -65,7 +65,7 @@ export default function About() {
             />
             <h2 className="mt-2">Who am I?</h2>
             <p>
-              I'm a Front End Developer for USAA. I'm passionate about creating
+              I'm a Full Stack Developer. I'm passionate about creating
               intuitive, dynamic, & responsive user experiences.
             </p>
           </Col>

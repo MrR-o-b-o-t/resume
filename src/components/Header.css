@@ -4,18 +4,18 @@
 }
 
 #work__btn {
+  margin-top: 30px;
   background-color: transparent;
   padding: 10px;
   font-size: 22px;
   font-weight: 400;
-  border: 2px solid white;
-  color: white;
+  border: 2px solid #333;
+  color: #333;
 }
 
 #work__btn:hover {
-  background-color: #343a40;
   transition: 0.5s ease-in-out;
-  border: 2px solid #343a40;
+  /* border: 2px solid #343a40; */
 }
 
 button:hover #work__btn__icon {
@@ -31,27 +31,28 @@ button:hover #work__btn__icon {
 
 #header__inner__div {
   z-index: 2;
-  color: white;
+  color: #333;
   width: 500px;
   text-align: center;
 }
 
-#bg-video {
-  object-fit: cover;
-  width: 100vw;
-  height: 100vh;
-  position: absolute;
-  top: 0;
-  left: 0;
+.dark {
+  background: #333;
 }
 
-@media only screen and (max-width: 490px) {
-  #header__container {
-    height: 100vh;
-    background: url(../images/nebula.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    z-index: 99;
-  }
+.dark h1 {
+  color: white !important;
+}
+
+.dark canvas {
+  z-index: 1 !important;
+}
+
+.dark #work__btn {
+  color: white !important;
+  border: 2px solid white !important;
+  margin-top: 30px;
+  padding: 10px;
+  font-size: 22px;
+  font-weight: 400;
 }

@@ -13,16 +13,18 @@ import { useTheme } from "./hooks/useTheme";
 function App() {
   const { mode } = useTheme();
   return (
-    <div className={mode}>
+    <>
       <Header />
       <NavBar />
-      <ThemeSelector />
-      <About />
-      <Blog />
-      <Projects />
-      <Contact />
-      <Footer />
-    </div>
+      <div className={mode}>
+        <ThemeSelector />
+        <About />
+        <Blog />
+        <Projects />
+        <Contact />
+        <Footer />
+      </div>
+    </>
   );
 }
 
