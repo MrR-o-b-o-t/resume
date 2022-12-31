@@ -33,7 +33,10 @@ export default function Projects() {
               <MDBCard className="h-100">
                 <MDBCardImage src={boePortfolio} alt="..." position="top" />
                 <MDBCardBody className="text-center">
-                  <a href="https://boe-texas.herokuapp.com/" target="blank">
+                  <a
+                    href="https://s3.console.aws.amazon.com/s3/buckets/boetexas?region=us-east-2&tab=permissions"
+                    target="blank"
+                  >
                     <button className="project__button">LEARN MORE</button>
                   </a>
                   <MDBCardText className="card__title mt-3">
