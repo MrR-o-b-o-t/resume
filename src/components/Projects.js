@@ -34,7 +34,7 @@ export default function Projects() {
                 <MDBCardImage src={boePortfolio} alt="..." position="top" />
                 <MDBCardBody className="text-center">
                   <a
-                    href="https://s3.console.aws.amazon.com/s3/buckets/boetexas?region=us-east-2&tab=permissions"
+                    href="http://boetexas.s3-website.us-east-2.amazonaws.com/"
                     target="blank"
                   >
                     <button className="project__button">LEARN MORE</button>
