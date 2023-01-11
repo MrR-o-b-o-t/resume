@@ -1,6 +1,6 @@
 .project__container {
   background-color: #f7f7f7;
-  margin-top: 100px;
+  padding-top: 100px;
   padding-bottom: 130px;
 }
 
@@ -16,6 +16,7 @@
   border: 2px solid #425664;
   transition: 0.5s ease-in-out;
   font-weight: 400;
+  border-radius: 5px;
 }
 
 .project__button:hover {

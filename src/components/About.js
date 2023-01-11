@@ -14,8 +14,8 @@ import {
   DiCss3Full,
   DiGit,
   DiHtml5,
+  DiJava,
 } from "react-icons/di";
-import { SiCsharp } from "react-icons/si";
 import { useTheme } from "../hooks/useTheme";
 
 export default function About() {
@@ -65,42 +65,42 @@ export default function About() {
             />
             <h2 className="mt-2">Who am I?</h2>
             <p>
-              I'm a Full Stack Developer. I'm passionate about creating
+              I'm a Front End Developer. I'm passionate about creating
               intuitive, dynamic, & responsive user experiences.
             </p>
           </Col>
         </Row>
         <div className="mt-5">
           <Row className="grid">
-            <Col xs={12} md={3} className="text-center mb-3">
+            <Col xs={6} md={3} className="text-center mb-5">
               <DiReact className="FaStyles" />
               <h2>REACT</h2>
             </Col>
-            <Col xs={12} md={3} className="text-center mb-3">
-              <SiCsharp className="FaStyles" />
-              <h2>C#</h2>
+            <Col xs={6} md={3} className="text-center mb-5">
+              <DiJava className="FaStyles" />
+              <h2>Java</h2>
             </Col>
-            <Col xs={12} md={3} className="text-center mb-3">
+            <Col xs={6} md={3} className="text-center mb-5">
               <DiHtml5 className="FaStyles" />
               <h2>HTML5</h2>
             </Col>
-            <Col xs={12} md={3} className="text-center mb-3">
+            <Col xs={6} md={3} className="text-center mb-5">
               <DiCss3Full className="FaStyles" />
               <h2>CSS3</h2>
             </Col>
-            <Col xs={12} md={3} className="text-center mb-3">
+            <Col xs={6} md={3} className="text-center mb-5">
               <DiJavascript1 className="FaStyles" />
               <h2>Javascript</h2>
             </Col>
-            <Col xs={12} md={3} className="text-center mb-3">
+            <Col xs={6} md={3} className="text-center mb-5">
               <DiNodejs className="FaStyles" />
               <h2>Node.js</h2>
             </Col>
-            <Col xs={12} md={3} className="text-center mb-3">
+            <Col xs={6} md={3} className="text-center mb-5">
               <DiPostgresql className="FaStyles" />
               <h2>Postgres</h2>
             </Col>
-            <Col xs={12} md={3} className="text-center mb-3">
+            <Col xs={6} md={3} className="text-center mb-5">
               <DiGit className="FaStyles" />
               <h2>Git</h2>
             </Col>

@@ -16,10 +16,10 @@ export default function BlogList({ blogs }) {
       <h1 style={{ textAlign: "center", color: "white" }}>BLOG</h1>
       <Row xs={1} md={3} className="blog-row g-4 mt-5 p-3">
         {blogs.map((blog) => (
-          <Col key={blog.id} className="blog-cards">
+          <Col key={blog.id}>
             <Card>
               <Card.Body className="blog-cards">
-                <Card.Title>{blog.title}</Card.Title>
+                <Card.Title as="h3">{blog.title}</Card.Title>
                 <Card.Text>{blog.body}</Card.Text>
                 <Button id="blog__btn">Read More</Button>
               </Card.Body>

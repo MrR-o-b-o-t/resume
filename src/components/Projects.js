@@ -1,13 +1,21 @@
 import "./Projects.css";
-import React from "react";
+import React, { useState } from "react";
 import {
   MDBRow,
+  MDBBtn,
   MDBCol,
   MDBCard,
   MDBCardBody,
   MDBCardImage,
   MDBCardText,
   MDBContainer,
+  MDBModal,
+  MDBModalDialog,
+  MDBModalContent,
+  MDBModalHeader,
+  MDBModalTitle,
+  MDBModalBody,
+  MDBModalFooter,
 } from "mdb-react-ui-kit";
 
 import boePortfolio from "../images/boePortfolio.PNG";
@@ -20,6 +28,9 @@ import jas from "../images/jas.PNG";
 import { useTheme } from "../hooks/useTheme";
 
 export default function Projects() {
+  const [basicModal, setBasicModal] = useState(false);
+  const toggleShow = () => setBasicModal(!basicModal);
+
   const { mode } = useTheme();
   return (
     <div className={`project__container ${mode}`}>
@@ -33,20 +44,69 @@ export default function Projects() {
               <MDBCard className="h-100">
                 <MDBCardImage src={boePortfolio} alt="..." position="top" />
                 <MDBCardBody className="text-center">
-                  <a
-                    href="http://boetexas.s3-website.us-east-2.amazonaws.com/"
-                    target="blank"
-                  >
-                    <button className="project__button">LEARN MORE</button>
-                  </a>
+                  <button onClick={toggleShow} className="project__button">
+                    LEARN MORE
+                  </button>
                   <MDBCardText className="card__title mt-3">
                     Bank of England Texas
                   </MDBCardText>
-                  <MDBCardText className="mt-3">
-                    React JS, Bootstrap, JavaScript, GSAP, CSS
-                  </MDBCardText>
                 </MDBCardBody>
               </MDBCard>
+
+              <MDBModal show={basicModal} setShow={setBasicModal} tabIndex="-1">
+                <MDBModalDialog size="l" centered>
+                  <MDBModalContent>
+                    <MDBModalHeader>
+                      <MDBModalTitle>Bank of England Texas</MDBModalTitle>
+                      <MDBBtn
+                        className="btn-close"
+                        color="none"
+                        onClick={toggleShow}
+                      ></MDBBtn>
+                    </MDBModalHeader>
+                    <MDBModalBody>
+                      <MDBCard className="h-100">
+                        <MDBCardImage
+                          src={boePortfolio}
+                          alt="..."
+                          position="top"
+                        />
+                        <MDBCardBody className="text-center">
+                          <a
+                            href="https://boe-texas.firebaseapp.com/"
+                            target="blank"
+                          >
+                            <button
+                              onClick={toggleShow}
+                              className="project__button"
+                            >
+                              View Live
+                            </button>
+                          </a>
+                          <MDBCardText className="mt-3">
+                            Built for Bank of England Texas using React JS,
+                            Node.js, MDBReact, JavaScript, GSAP, and CSS.
+                            <br />
+                            <br />
+                            This was my first industry level project. As a
+                            junior developer and working solo it presented many
+                            challenges and many learning oppurtunites. It
+                            provided me the oppurtunity to take a deep dive into
+                            React, Redux, Node, MDBReact, and Git for version
+                            control.
+                          </MDBCardText>
+                        </MDBCardBody>
+                      </MDBCard>
+                    </MDBModalBody>
+
+                    <MDBModalFooter>
+                      <MDBBtn color="secondary" onClick={toggleShow}>
+                        Close
+                      </MDBBtn>
+                    </MDBModalFooter>
+                  </MDBModalContent>
+                </MDBModalDialog>
+              </MDBModal>
             </MDBCol>
             <MDBCol className="portfolio__cards">
               <MDBCard className="h-100">
