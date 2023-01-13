@@ -1,16 +1,20 @@
-import "./Contact.css"
-import React from "react"
-import { useForm, ValidationError } from "@formspree/react"
-import { MDBRow, MDBCol } from "mdb-react-ui-kit"
+import "./Contact.css";
+import React from "react";
+import { useForm, ValidationError } from "@formspree/react";
+import { MDBRow, MDBCol, MDBInput, MDBContainer } from "mdb-react-ui-kit";
 
 export default function Projects() {
-  const [state, handleSubmit] = useForm("myykylgq")
+  const [state, handleSubmit] = useForm("myykylgq");
   if (state.succeeded) {
-    return <p>Thanks for joining!</p>
+    return <p>Thanks for joining!</p>;
   }
 
   return (
-    <div id="contact__container" style={{ backgroundColor: "#212529" }}>
+    <MDBContainer
+      fluid
+      id="contact__container"
+      style={{ backgroundColor: "#212529" }}
+    >
       <div class="custom-shape-divider-top-1643055266">
         <svg
           data-name="Layer 1"
@@ -25,30 +29,38 @@ export default function Projects() {
           ></path>
         </svg>
       </div>
-      <h1
-        style={{
-          color: "white",
-          paddingTop: "100px",
-          fontWeight: "600",
-          fontSize: "48px",
-        }}
-        className="text-center"
-      >
-        CONTACT
-      </h1>
-      <div id="contact__fields" className="text-center mt-5">
-        <MDBRow>
-          <form onSubmit={handleSubmit}>
-            <MDBCol className="contact__input" md="12">
-              <input id="email" type="email" name="email" placeholder="Email" />
+      <h1 className="text-center">CONTACT</h1>
+      <MDBContainer fluid>
+        <MDBRow id="contact__fields" className="text-center mt-5">
+          <form className="contact__input" onSubmit={handleSubmit}>
+            <MDBCol md="12">
+              <MDBInput
+                labelClass="contact__form__label"
+                className="mb-2"
+                id="email"
+                type="email"
+                name="email"
+                placeholder="Email"
+                label="Email"
+              />
               <ValidationError
                 prefix="Email"
                 field="email"
                 errors={state.errors}
               />
             </MDBCol>
-            <MDBCol md="12" className="contact__input">
-              <textarea id="message" name="message" placeholder="Message" />
+            <MDBCol md="12">
+              <MDBInput
+                labelClass="contact__form__label"
+                labelStyle={{ color: "#212529" }}
+                textarea
+                wrapperClass="mb-4"
+                rows={4}
+                id="message"
+                name="message"
+                placeholder="Message"
+                label="Message"
+              />
               <ValidationError
                 prefix="Message"
                 field="message"
@@ -66,7 +78,7 @@ export default function Projects() {
             </MDBCol>
           </form>
         </MDBRow>
-      </div>
-    </div>
-  )
+      </MDBContainer>
+    </MDBContainer>
+  );
 }

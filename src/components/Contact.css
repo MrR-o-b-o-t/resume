@@ -1,3 +1,10 @@
+#contact__container h1 {
+  color: white;
+  padding-top: 100px;
+  font-weight: 600;
+  font-size: 48px;
+}
+
 .custom-shape-divider-top-1643056010 {
   position: absolute;
   top: 0;
@@ -20,9 +27,7 @@
 
 .contact__input input,
 textarea {
-  min-width: 400px;
-  margin-top: 2px;
-  background-color: #dee2e6;
+  background-color: #dee2e6 !important;
   border-top-style: hidden;
   border-right-style: hidden;
   border-left-style: hidden;
@@ -30,17 +35,7 @@ textarea {
 
 .contact__input:focus input,
 textarea {
-  outline: none !important;
-  border: none !important;
   border-width: 0px !important;
-}
-
-#email:focus {
-  outline: none;
-}
-
-.contact__input textarea {
-  min-height: 200px;
 }
 
 #contact__btn {
@@ -51,6 +46,7 @@ textarea {
   border: 2px solid white;
   color: white;
   transition: 0.5s ease-in-out;
+  border-radius: 5px;
 }
 
 #contact__btn:hover {
@@ -62,4 +58,8 @@ textarea {
 #contact__container {
   padding-bottom: 200px;
   overflow: hidden;
+}
+
+.contact__form__label {
+  color: #212529 !important;
 }

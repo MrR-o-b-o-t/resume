@@ -5,6 +5,7 @@ import responsive from "../images/responsive.png";
 import intuitive from "../images/intuitive.png";
 import dynamic from "../images/dynamic.png";
 import headshot from "../images/headshot.jpg";
+import Fade from "react-reveal/Fade";
 import { Row, Container, Col } from "react-bootstrap";
 import {
   DiNodejs,
@@ -28,29 +29,37 @@ export default function About() {
       <div className="d-flex justify-content-evenly p-3">
         <Row>
           <Col md className="text-center">
-            <img src={rocket} alt="rocket" />
-            <h2>FAST</h2>
-            <p>
-              Fast load times and lage free interaction is my highest priority
-            </p>
+            <Fade bottom>
+              <img src={rocket} alt="rocket" />
+              <h2>FAST</h2>
+              <p>
+                Fast load times and lage free interaction is my highest priority
+              </p>
+            </Fade>
           </Col>
           <Col md className="text-center">
-            <img src={responsive} alt="responsive" />
-            <h2>RESPONSIVE</h2>
-            <p>My layouts will work on any device, big or small.</p>
+            <Fade bottom>
+              <img src={responsive} alt="responsive" />
+              <h2>RESPONSIVE</h2>
+              <p>My layouts will work on any device, big or small.</p>
+            </Fade>
           </Col>
           <Col md className="text-center">
-            <img src={intuitive} alt="intuitive" />
-            <h2>INTUITIVE</h2>
-            <p>Strong preference for easy to use, intuitive UX/UI.</p>
+            <Fade bottom>
+              <img src={intuitive} alt="intuitive" />
+              <h2>INTUITIVE</h2>
+              <p>Strong preference for easy to use, intuitive UX/UI.</p>
+            </Fade>
           </Col>
           <Col md className="text-center">
-            <img src={dynamic} alt="dynamic" />
-            <h2>DYNAMIC</h2>
-            <p>
-              Websites don't have to be static, I love making pages come to
-              life.
-            </p>
+            <Fade bottom>
+              <img src={dynamic} alt="dynamic" />
+              <h2>DYNAMIC</h2>
+              <p>
+                Websites don't have to be static, I love making pages come to
+                life.
+              </p>
+            </Fade>
           </Col>
         </Row>
       </div>

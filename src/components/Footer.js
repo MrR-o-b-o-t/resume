@@ -1,6 +1,6 @@
-import "./Footer.css"
-import React from "react"
-import { MDBIcon } from "mdb-react-ui-kit"
+import "./Footer.css";
+import React from "react";
+import { MDBIcon } from "mdb-react-ui-kit";
 
 export default function Footer() {
   return (
@@ -54,9 +54,9 @@ export default function Footer() {
             paddingBottom: "30px",
           }}
         >
-          SAM KAUTZ 2022
+          SAM KAUTZ {new Date().getFullYear()}
         </p>
       </div>
     </div>
-  )
+  );
 }

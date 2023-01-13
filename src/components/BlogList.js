@@ -3,6 +3,7 @@ import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
+import Fade from "react-reveal/Fade";
 
 import "./BlogList.css";
 
@@ -13,7 +14,9 @@ export default function BlogList({ blogs }) {
 
   return (
     <div className="blog-container">
-      <h1 style={{ textAlign: "center", color: "white" }}>BLOG</h1>
+      <Fade>
+        <h1 style={{ textAlign: "center", color: "white" }}>BLOG</h1>
+      </Fade>
       <Row xs={1} md={3} className="blog-row g-4 mt-5 p-3">
         {blogs.map((blog) => (
           <Col key={blog.id}>
