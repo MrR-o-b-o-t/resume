@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import {
   MDBRow,
   MDBBtn,
-  MDBCol,
   MDBCard,
   MDBCardFooter,
   MDBCardTitle,
@@ -22,13 +21,13 @@ import {
 
 import Fade from "react-reveal/Fade";
 
-import boePortfolio from "../images/boePortfolio.PNG";
+import boePortfolio from "../images/boePortfolio.png";
 import dC1 from "../images/dc-1.png";
 import dC2 from "../images/dc-2.png";
 import cherry from "../images/cherry.png";
-import titusCms from "../images/titusCms.PNG";
-import fbl from "../images/fbl.PNG";
-import jas from "../images/jas.PNG";
+import titusCms from "../images/titusCms.png";
+import fbl from "../images/fbl.png";
+import jas from "../images/jas.png";
 
 import { useTheme } from "../hooks/useTheme";
 
