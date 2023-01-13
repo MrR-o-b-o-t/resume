@@ -21,7 +21,7 @@ import {
 
 import Fade from "react-reveal/Fade";
 
-// import boePortfolio from "../images/boePortfolio.png";
+import boePortfolio from "../images/boePortfolio.png";
 import dC1 from "../images/dc-1.png";
 import dC2 from "../images/dc-2.png";
 import cherry from "../images/cherry.png";
@@ -50,7 +50,7 @@ export default function Projects() {
             {/* BOE Card */}
             <Fade left>
               <MDBCard className="h-100">
-                <MDBCardImage src={dC1} alt="..." position="top" />
+                <MDBCardImage src={boePortfolio} alt="..." position="top" />
                 <MDBCardBody>
                   <MDBCardTitle className="text-center">
                     Bank of England Texas
@@ -77,7 +77,11 @@ export default function Projects() {
                   </MDBModalHeader>
                   <MDBModalBody>
                     <MDBCard className="h-100">
-                      <MDBCardImage src={dC1} alt="..." position="top" />
+                      <MDBCardImage
+                        src={boePortfolio}
+                        alt="..."
+                        position="top"
+                      />
                       <MDBCardBody className="text-center">
                         <a
                           href="https://boe-texas.firebaseapp.com/"
