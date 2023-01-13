@@ -21,13 +21,13 @@ import {
 
 import Fade from "react-reveal/Fade";
 
-import boePortfolio from "../images/boePortfolio.png";
-import dC1 from "../images/dc-1.png";
-import dC2 from "../images/dc-2.png";
-import cherry from "../images/cherry.png";
-import titusCms from "../images/titusCms.png";
-import fbl from "../images/fbl.png";
-import jas from "../images/jas.png";
+// import boePortfolio from "../images/boePortfolio.png";
+// import dC1 from "../images/dc-1.png";
+// import dC2 from "../images/dc-2.png";
+// import cherry from "../images/cherry.png";
+// import titusCms from "../images/titusCms.png";
+// import fbl from "../images/fbl.png";
+// import jas from "../images/jas.png";
 
 import { useTheme } from "../hooks/useTheme";
 
@@ -50,7 +50,7 @@ export default function Projects() {
             {/* BOE Card */}
             <Fade left>
               <MDBCard className="h-100">
-                <MDBCardImage src={boePortfolio} alt="..." position="top" />
+                {/* <MDBCardImage src={boePortfolio} alt="..." position="top" /> */}
                 <MDBCardBody>
                   <MDBCardTitle className="text-center">
                     Bank of England Texas
@@ -77,11 +77,11 @@ export default function Projects() {
                   </MDBModalHeader>
                   <MDBModalBody>
                     <MDBCard className="h-100">
-                      <MDBCardImage
+                      {/* <MDBCardImage
                         src={boePortfolio}
                         alt="..."
                         position="top"
-                      />
+                      /> */}
                       <MDBCardBody className="text-center">
                         <a
                           href="https://boe-texas.firebaseapp.com/"
@@ -121,7 +121,7 @@ export default function Projects() {
             {/* Dev Connector Card */}
             <Fade bottom>
               <MDBCard className="h-100">
-                <MDBCardImage src={dC1} alt="..." position="top" />
+                {/* <MDBCardImage src={dC1} alt="..." position="top" /> */}
                 <MDBCardBody>
                   <MDBCardTitle className="text-center">
                     Dev Connector
@@ -148,7 +148,7 @@ export default function Projects() {
                   </MDBModalHeader>
                   <MDBModalBody>
                     <MDBCard className="h-100">
-                      <MDBCardImage src={dC2} alt="..." position="top" />
+                      {/* <MDBCardImage src={dC2} alt="..." position="top" /> */}
                       <MDBCardBody className="text-center">
                         <a
                           href="https://devtracker-b3494.firebaseapp.com/"
@@ -190,7 +190,7 @@ export default function Projects() {
             {/* Cherry Coatings Card */}
             <Fade right>
               <MDBCard className="h-100">
-                <MDBCardImage src={cherry} alt="..." position="top" />
+                {/* <MDBCardImage src={cherry} alt="..." position="top" /> */}
                 <MDBCardBody>
                   <MDBCardTitle className="text-center">
                     Cherry Coatings
@@ -207,7 +207,7 @@ export default function Projects() {
             {/* Titus CMS Card */}
             <Fade left>
               <MDBCard className="h-100">
-                <MDBCardImage src={titusCms} alt="..." position="top" />
+                {/* <MDBCardImage src={titusCms} alt="..." position="top" /> */}
                 <MDBCardBody>
                   <MDBCardTitle className="text-center">Titus CMS</MDBCardTitle>
                 </MDBCardBody>
@@ -222,7 +222,7 @@ export default function Projects() {
             {/* Forbes Barrentine Law Card */}
             <Fade bottom>
               <MDBCard className="h-100">
-                <MDBCardImage src={fbl} alt="..." position="top" />
+                {/* <MDBCardImage src={fbl} alt="..." position="top" /> */}
                 <MDBCardBody>
                   <MDBCardTitle className="text-center">
                     Forbes Barrentine Law
@@ -239,7 +239,7 @@ export default function Projects() {
             {/* JS Card */}
             <Fade right>
               <MDBCard className="h-100">
-                <MDBCardImage src={jas} alt="..." position="top" />
+                {/* <MDBCardImage src={jas} alt="..." position="top" /> */}
                 <MDBCardBody>
                   <MDBCardTitle className="text-center">
                     Johnson and Sons Commercial Floors
