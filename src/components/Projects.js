@@ -21,13 +21,11 @@ import {
 
 import Fade from "react-reveal/Fade";
 
-// import dC1 from "../images/dc-1.png";
-// import dC2 from "../images/dc-2.png";
-// import boePortfolio from "../images/boePortfolio.png";
-// import cherry from "../images/cherry.png";
-// import titusCms from "../images/titusCms.png";
-// import fbl from "../images/fbl.png";
-// import jas from "../images/jas.png";
+import dC1 from "../images/dc1.png";
+import dC2 from "../images/dc2.png";
+import cherry from "../images/cc.png";
+import fbl from "../images/fbl.png";
+import jas from "../images/js.png";
 
 import boe from "../images/boe.png";
 
@@ -50,21 +48,21 @@ export default function Projects() {
         <MDBContainer>
           <MDBRow className="row-cols-1 row-cols-md-3 g-4">
             {/* BOE Card */}
-            {/* <Fade left> */}
-            <MDBCard className="h-100">
-              <MDBCardImage src={boe} alt="..." position="top" />
-              <MDBCardBody>
-                <MDBCardTitle className="text-center">
-                  Bank of England Texas
-                </MDBCardTitle>
-              </MDBCardBody>
-              <MDBCardFooter className="text-center">
-                <button onClick={toggleShow} className="project__button">
-                  LEARN MORE
-                </button>
-              </MDBCardFooter>
-            </MDBCard>
-            {/* </Fade> */}
+            <Fade left>
+              <MDBCard className="h-100">
+                <MDBCardImage src={boe} alt="..." position="top" />
+                <MDBCardBody>
+                  <MDBCardTitle className="text-center">
+                    Bank of England Texas
+                  </MDBCardTitle>
+                </MDBCardBody>
+                <MDBCardFooter className="text-center">
+                  <button onClick={toggleShow} className="project__button">
+                    LEARN MORE
+                  </button>
+                </MDBCardFooter>
+              </MDBCard>
+            </Fade>
 
             <MDBModal show={basicModal} setShow={setBasicModal} tabIndex="-1">
               <MDBModalDialog size="l" centered>
@@ -119,7 +117,7 @@ export default function Projects() {
             {/* Dev Connector Card */}
             <Fade bottom>
               <MDBCard className="h-100">
-                {/* <MDBCardImage src={dC1} alt="..." position="top" /> */}
+                <MDBCardImage src={dC1} alt="..." position="top" />
                 <MDBCardBody>
                   <MDBCardTitle className="text-center">
                     Dev Connector
@@ -146,7 +144,7 @@ export default function Projects() {
                   </MDBModalHeader>
                   <MDBModalBody>
                     <MDBCard className="h-100">
-                      {/* <MDBCardImage src={dC2} alt="..." position="top" /> */}
+                      <MDBCardImage src={dC2} alt="..." position="top" />
                       <MDBCardBody className="text-center">
                         <a
                           href="https://devtracker-b3494.firebaseapp.com/"
@@ -186,26 +184,26 @@ export default function Projects() {
             </MDBModal>
 
             {/* Cherry Coatings Card */}
-            {/* <Fade right> */}
-            <MDBCard className="h-100">
-              {/* <MDBCardImage src={cherry} alt="..." position="top" /> */}
-              <MDBCardBody>
-                <MDBCardTitle className="text-center">
-                  Cherry Coatings
-                </MDBCardTitle>
-              </MDBCardBody>
-              <MDBCardFooter className="text-center">
-                <a href="https://cherrycoatings.com/" target="blank">
-                  <button className="project__button">LEARN MORE</button>
-                </a>
-              </MDBCardFooter>
-            </MDBCard>
-            {/* </Fade> */}
+            <Fade right>
+              <MDBCard className="h-100">
+                <MDBCardImage src={cherry} alt="..." position="top" />
+                <MDBCardBody>
+                  <MDBCardTitle className="text-center">
+                    Cherry Coatings
+                  </MDBCardTitle>
+                </MDBCardBody>
+                <MDBCardFooter className="text-center">
+                  <a href="https://cherrycoatings.com/" target="blank">
+                    <button className="project__button">LEARN MORE</button>
+                  </a>
+                </MDBCardFooter>
+              </MDBCard>
+            </Fade>
 
             {/* Titus CMS Card */}
-            <Fade left>
+            {/* <Fade left>
               <MDBCard className="h-100">
-                {/* <MDBCardImage src={titusCms} alt="..." position="top" /> */}
+                <MDBCardImage src={titusCms} alt="..." position="top" />
                 <MDBCardBody>
                   <MDBCardTitle className="text-center">Titus CMS</MDBCardTitle>
                 </MDBCardBody>
@@ -215,12 +213,12 @@ export default function Projects() {
                   </a>
                 </MDBCardFooter>
               </MDBCard>
-            </Fade>
+            </Fade> */}
 
             {/* Forbes Barrentine Law Card */}
             <Fade bottom>
               <MDBCard className="h-100">
-                {/* <MDBCardImage src={fbl} alt="..." position="top" /> */}
+                <MDBCardImage src={fbl} alt="..." position="top" />
                 <MDBCardBody>
                   <MDBCardTitle className="text-center">
                     Forbes Barrentine Law
@@ -237,7 +235,7 @@ export default function Projects() {
             {/* JS Card */}
             <Fade right>
               <MDBCard className="h-100">
-                {/* <MDBCardImage src={jas} alt="..." position="top" /> */}
+                <MDBCardImage src={jas} alt="..." position="top" />
                 <MDBCardBody>
                   <MDBCardTitle className="text-center">
                     Johnson and Sons Commercial Floors
