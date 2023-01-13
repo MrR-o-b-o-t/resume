@@ -38,21 +38,21 @@ export default function About() {
             </Fade>
           </Col>
           <Col md className="text-center">
-            <Fade bottom>
+            <Fade delay={500} bottom>
               <img src={responsive} alt="responsive" />
               <h2>RESPONSIVE</h2>
               <p>My layouts will work on any device, big or small.</p>
             </Fade>
           </Col>
           <Col md className="text-center">
-            <Fade bottom>
+            <Fade delay={1000} bottom>
               <img src={intuitive} alt="intuitive" />
               <h2>INTUITIVE</h2>
               <p>Strong preference for easy to use, intuitive UX/UI.</p>
             </Fade>
           </Col>
           <Col md className="text-center">
-            <Fade bottom>
+            <Fade delay={1500} bottom>
               <img src={dynamic} alt="dynamic" />
               <h2>DYNAMIC</h2>
               <p>

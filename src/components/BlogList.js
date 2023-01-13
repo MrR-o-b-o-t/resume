@@ -14,7 +14,7 @@ export default function BlogList({ blogs }) {
 
   return (
     <div className="blog-container">
-      <Fade>
+      <Fade delay={500}>
         <h1 style={{ textAlign: "center", color: "white" }}>BLOG</h1>
       </Fade>
       <Row xs={1} md={3} className="blog-row g-4 mt-5 p-3">
