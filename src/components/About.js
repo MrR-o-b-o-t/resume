@@ -26,7 +26,10 @@ export default function About() {
       <div id="about__title">
         <h1>ABOUT</h1>
       </div>
-      <div className="d-flex justify-content-evenly p-3">
+      <div
+        style={{ borderBottom: "2px solid #425664" }}
+        className="d-flex justify-content-evenly p-3"
+      >
         <Row>
           <Col md className="text-center">
             <Fade bottom>

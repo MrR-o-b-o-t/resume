@@ -2,7 +2,7 @@ import "./App.css";
 import NavBar from "./components/NavBar";
 import Header from "./components/Header";
 import About from "./components/About";
-import Blog from "./components/Blog";
+// import Blog from "./components/Blog";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
@@ -19,7 +19,7 @@ function App() {
       <div className={mode}>
         <ThemeSelector />
         <About />
-        <Blog />
+        {/* <Blog /> */}
         <Projects />
         <Contact />
         <Footer />

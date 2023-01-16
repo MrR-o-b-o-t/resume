@@ -9,6 +9,7 @@
   padding: 75px 0 75px 0;
   font-weight: 600;
   font-size: 48px;
+  border-top: 3px solid #425664;
 }
 .project__button {
   padding: 10px;
