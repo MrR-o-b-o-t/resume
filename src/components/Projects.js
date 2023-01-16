@@ -67,7 +67,7 @@ export default function Projects() {
             <MDBModal show={basicModal} setShow={setBasicModal} tabIndex="-1">
               <MDBModalDialog size="l" centered>
                 <MDBModalContent>
-                  <MDBModalHeader>
+                  <MDBModalHeader className={`${mode}`}>
                     <MDBModalTitle>Bank of England Texas</MDBModalTitle>
                     <MDBBtn
                       className="btn-close"
@@ -75,7 +75,7 @@ export default function Projects() {
                       onClick={toggleShow}
                     ></MDBBtn>
                   </MDBModalHeader>
-                  <MDBModalBody>
+                  <MDBModalBody className={`${mode}`}>
                     <MDBCard className="h-100">
                       <MDBCardImage src={boe} alt="..." position="top" />
                       <MDBCardBody className="text-center">
@@ -90,8 +90,8 @@ export default function Projects() {
                             View Live
                           </button>
                         </a>
-                        <MDBCardText className="mt-3">
-                          Built for Bank of England Texas using React JS,
+                        <MDBCardText className={`mt-3 ${mode} rounded p-3`}>
+                          Built for Bank of England Texas using React JS, Redux,
                           Node.js, MDBReact, JavaScript, GSAP, and CSS.
                           <br />
                           <br />
@@ -106,9 +106,9 @@ export default function Projects() {
                   </MDBModalBody>
 
                   <MDBModalFooter>
-                    <MDBBtn color="secondary" onClick={toggleShow}>
+                    <button className="project__button" onClick={toggleShow}>
                       Close
-                    </MDBBtn>
+                    </button>
                   </MDBModalFooter>
                 </MDBModalContent>
               </MDBModalDialog>
@@ -134,7 +134,7 @@ export default function Projects() {
             <MDBModal show={dcModal} setShow={setdcModal} tabIndex="-1">
               <MDBModalDialog size="l" centered>
                 <MDBModalContent>
-                  <MDBModalHeader>
+                  <MDBModalHeader className={`${mode}`}>
                     <MDBModalTitle>Dev Connector</MDBModalTitle>
                     <MDBBtn
                       className="btn-close"
@@ -142,7 +142,7 @@ export default function Projects() {
                       onClick={toggleShow2}
                     ></MDBBtn>
                   </MDBModalHeader>
-                  <MDBModalBody>
+                  <MDBModalBody className={`${mode}`}>
                     <MDBCard className="h-100">
                       <MDBCardImage src={dC2} alt="..." position="top" />
                       <MDBCardBody className="text-center">
@@ -152,7 +152,7 @@ export default function Projects() {
                         >
                           <button className="project__button">View Live</button>
                         </a>
-                        <MDBCardText className="mt-3">
+                        <MDBCardText className={`mt-3 ${mode} rounded p-3`}>
                           Built for myself and fellow devs working on projects
                           in our free time using React.js, Node.js, MUIReact,
                           CSS, and a few npm packages for the frontend. The
@@ -175,9 +175,9 @@ export default function Projects() {
                   </MDBModalBody>
 
                   <MDBModalFooter>
-                    <MDBBtn color="secondary" onClick={toggleShow2}>
-                      Close
-                    </MDBBtn>
+                    <button className="project__button" onClick={toggleShow2}>
+                      CLOSE
+                    </button>
                   </MDBModalFooter>
                 </MDBModalContent>
               </MDBModalDialog>

@@ -10,13 +10,25 @@ export default function ThemeSelector() {
   };
 
   return (
-    <div className="mode-toggle" onClick={toggle}>
+    <div
+      className={`mode-toggle`}
+      onClick={toggle}
+      style={{ filter: mode === "dark" ? "invert(86%)" : "invert(0%)" }}
+    >
       <img
         src={modeIcon}
         alt="Theme selector button"
-        style={{ filter: mode === "dark" ? "invert(100%)" : "invert(20%)" }}
+        style={{ filter: mode === "dark" ? "invert(0%)" : "invert(20%)" }}
       />
-      <p style={{ paddingTop: "17px", fontWeight: "bold" }}>Dark/Light Mode</p>
+      <p
+        style={{
+          paddingTop: "17px",
+          fontWeight: "bold",
+          filter: mode === "dark" ? "invert(100%)" : "invert(20%)",
+        }}
+      >
+        Dark/Light Mode
+      </p>
     </div>
   );
 }

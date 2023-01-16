@@ -5,7 +5,8 @@
 
 .about__container {
   overflow: hidden;
-  margin-bottom: 70px;
+  padding-bottom: 70px;
+  background-color: #eaeaea;
 }
 
 #headshot {

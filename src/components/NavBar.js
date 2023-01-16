@@ -15,7 +15,7 @@ export default function App() {
   const [showNav, setShowNav] = useState(false);
 
   return (
-    <MDBNavbar sticky id="navBar" expand="md" dark>
+    <MDBNavbar id="navBar" expand="md" dark>
       <MDBContainer fluid>
         <MDBNavbarToggler
           type="button"
