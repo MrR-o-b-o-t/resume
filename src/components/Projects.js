@@ -26,6 +26,8 @@ import dC2 from "../images/dc2.png";
 import cherry from "../images/cc.png";
 import fbl from "../images/fbl.png";
 import jas from "../images/js.png";
+import ft1 from "../images/ft1.png";
+import ft2 from "../images/ft2.png";
 
 import boe from "../images/boe.png";
 
@@ -37,6 +39,9 @@ export default function Projects() {
 
   const [dcModal, setdcModal] = useState(false);
   const toggleShow2 = () => setdcModal(!dcModal);
+
+  const [ftModal, setftModal] = useState(false);
+  const toggleShow3 = () => setdcModal(!dcModal);
 
   const { mode } = useTheme();
   return (
@@ -79,17 +84,6 @@ export default function Projects() {
                     <MDBCard className="h-100">
                       <MDBCardImage src={boe} alt="..." position="top" />
                       <MDBCardBody className="text-center">
-                        <a
-                          href="https://boe-texas.firebaseapp.com/"
-                          target="blank"
-                        >
-                          <button
-                            onClick={toggleShow}
-                            className="project__button"
-                          >
-                            View Live
-                          </button>
-                        </a>
                         <MDBCardText className={`mt-3 ${mode} rounded p-3`}>
                           Built for Bank of England Texas using React JS, Redux,
                           Node.js, MDBReact, JavaScript, GSAP, and CSS.
@@ -100,6 +94,19 @@ export default function Projects() {
                           challenges and many learning oppurtunites. It provided
                           me the oppurtunity to take a deep dive into React,
                           Redux, Node, MDBReact, and Git for version control.
+                          <br />
+                          <br />
+                          <a
+                            href="https://boe-texas.firebaseapp.com/"
+                            target="blank"
+                          >
+                            <button
+                              onClick={toggleShow}
+                              className="project__button"
+                            >
+                              View Live
+                            </button>
+                          </a>
                         </MDBCardText>
                       </MDBCardBody>
                     </MDBCard>
@@ -146,12 +153,6 @@ export default function Projects() {
                     <MDBCard className="h-100">
                       <MDBCardImage src={dC2} alt="..." position="top" />
                       <MDBCardBody className="text-center">
-                        <a
-                          href="https://devtracker-b3494.firebaseapp.com/"
-                          target="blank"
-                        >
-                          <button className="project__button">View Live</button>
-                        </a>
                         <MDBCardText className={`mt-3 ${mode} rounded p-3`}>
                           Built for myself and fellow devs working on projects
                           in our free time using React.js, Node.js, MUIReact,
@@ -169,6 +170,16 @@ export default function Projects() {
                           add comments under individual tasks. Task can be
                           completed and removed but only by the user who created
                           the task.
+                          <br />
+                          <br />
+                          <a
+                            href="https://devtracker-b3494.firebaseapp.com/"
+                            target="blank"
+                          >
+                            <button className="project__button">
+                              View Live
+                            </button>
+                          </a>
                         </MDBCardText>
                       </MDBCardBody>
                     </MDBCard>
@@ -183,8 +194,78 @@ export default function Projects() {
               </MDBModalDialog>
             </MDBModal>
 
-            {/* Cherry Coatings Card */}
+            {/* Finance Tracker Card */}
             <Fade right>
+              <MDBCard className="h-100">
+                <MDBCardImage src={ft1} alt="..." position="top" />
+                <MDBCardBody>
+                  <MDBCardTitle className="text-center">
+                    Firebase Finance
+                  </MDBCardTitle>
+                </MDBCardBody>
+                <MDBCardFooter className="text-center">
+                  <a
+                    href="https://financetracker-20936.web.app/"
+                    target="blank"
+                  >
+                    <button className="project__button">LEARN MORE</button>
+                  </a>
+                </MDBCardFooter>
+              </MDBCard>
+            </Fade>
+
+            <MDBModal show={ftModal} setShow={setftModal} tabIndex="-1">
+              <MDBModalDialog size="l" centered>
+                <MDBModalContent>
+                  <MDBModalHeader className={`${mode}`}>
+                    <MDBModalTitle>Firebase Finance Tracker</MDBModalTitle>
+                    <MDBBtn
+                      className="btn-close"
+                      color="none"
+                      onClick={toggleShow3}
+                    ></MDBBtn>
+                  </MDBModalHeader>
+                  <MDBModalBody className={`${mode}`}>
+                    <MDBCard className="h-100">
+                      <MDBCardImage src={dC2} alt="..." position="top" />
+                      <MDBCardBody className="text-center">
+                        <MDBCardText className={`mt-3 ${mode} rounded p-3`}>
+                          We've all seen the finance tracker. I won't blow any
+                          smoke, this one isn't much different.
+                          <br />
+                          <br />I built this application while learning how to
+                          use Firebase and learning the Ant Design library. It's
+                          fairly simple in that users can login, logout, signup,
+                          and add and delete items from their account. Users can
+                          only view, add, and delete data they have added to
+                          their account. Although it was a strait forward
+                          project it still took me several weeks to complete.
+                          Writing the custom hooks, actions, and learning the
+                          Firebase hooks took some time.
+                        </MDBCardText>
+                        <br />
+                        <br />
+                        <a
+                          href="https://financetracker-20936.web.app/"
+                          target="blank"
+                        >
+                          <button className="project__button">View Live</button>
+                        </a>
+                      </MDBCardBody>
+                    </MDBCard>
+                  </MDBModalBody>
+
+                  <MDBModalFooter>
+                    <button className="project__button" onClick={toggleShow2}>
+                      CLOSE
+                    </button>
+                  </MDBModalFooter>
+                </MDBModalContent>
+              </MDBModalDialog>
+            </MDBModal>
+
+            {/* Cherry Coatings Card */}
+            <Fade left>
               <MDBCard className="h-100">
                 <MDBCardImage src={cherry} alt="..." position="top" />
                 <MDBCardBody>
@@ -199,21 +280,6 @@ export default function Projects() {
                 </MDBCardFooter>
               </MDBCard>
             </Fade>
-
-            {/* Titus CMS Card */}
-            {/* <Fade left>
-              <MDBCard className="h-100">
-                <MDBCardImage src={titusCms} alt="..." position="top" />
-                <MDBCardBody>
-                  <MDBCardTitle className="text-center">Titus CMS</MDBCardTitle>
-                </MDBCardBody>
-                <MDBCardFooter className="text-center">
-                  <a href="/" target="blank">
-                    <button className="project__button">LEARN MORE</button>
-                  </a>
-                </MDBCardFooter>
-              </MDBCard>
-            </Fade> */}
 
             {/* Forbes Barrentine Law Card */}
             <Fade bottom>
