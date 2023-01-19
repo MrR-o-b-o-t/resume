@@ -41,7 +41,7 @@ export default function Projects() {
   const toggleShow2 = () => setdcModal(!dcModal);
 
   const [ftModal, setftModal] = useState(false);
-  const toggleShow3 = () => setdcModal(!dcModal);
+  const toggleShow3 = () => setftModal(!ftModal);
 
   const { mode } = useTheme();
   return (
@@ -204,12 +204,9 @@ export default function Projects() {
                   </MDBCardTitle>
                 </MDBCardBody>
                 <MDBCardFooter className="text-center">
-                  <a
-                    href="https://financetracker-20936.web.app/"
-                    target="blank"
-                  >
-                    <button className="project__button">LEARN MORE</button>
-                  </a>
+                  <button className="project__button" onClick={toggleShow3}>
+                    LEARN MORE
+                  </button>
                 </MDBCardFooter>
               </MDBCard>
             </Fade>
