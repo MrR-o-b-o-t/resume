@@ -102,7 +102,7 @@ export default function Projects() {
                           >
                             <button
                               onClick={toggleShow}
-                              className="project__button"
+                              className={`project__button ${mode}`}
                             >
                               View Live
                             </button>
@@ -176,7 +176,7 @@ export default function Projects() {
                             href="https://devtracker-b3494.firebaseapp.com/"
                             target="blank"
                           >
-                            <button className="project__button">
+                            <button className={`project__button ${mode}`}>
                               View Live
                             </button>
                           </a>
@@ -239,15 +239,17 @@ export default function Projects() {
                           project it still took me several weeks to complete.
                           Writing the custom hooks, actions, and learning the
                           Firebase hooks took some time.
+                          <br />
+                          <br />
+                          <a
+                            href="https://financetracker-20936.web.app/"
+                            target="blank"
+                          >
+                            <button className={`project__button ${mode}`}>
+                              View Live
+                            </button>
+                          </a>
                         </MDBCardText>
-                        <br />
-                        <br />
-                        <a
-                          href="https://financetracker-20936.web.app/"
-                          target="blank"
-                        >
-                          <button className="project__button">View Live</button>
-                        </a>
                       </MDBCardBody>
                     </MDBCard>
                   </MDBModalBody>
