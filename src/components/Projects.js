@@ -253,7 +253,7 @@ export default function Projects() {
                   </MDBModalBody>
 
                   <MDBModalFooter>
-                    <button className="project__button" onClick={toggleShow2}>
+                    <button className="project__button" onClick={toggleShow3}>
                       CLOSE
                     </button>
                   </MDBModalFooter>
