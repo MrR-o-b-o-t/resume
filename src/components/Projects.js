@@ -224,7 +224,7 @@ export default function Projects() {
                   </MDBModalHeader>
                   <MDBModalBody className={`${mode}`}>
                     <MDBCard className="h-100">
-                      <MDBCardImage src={dC2} alt="..." position="top" />
+                      <MDBCardImage src={ft2} alt="..." position="top" />
                       <MDBCardBody className="text-center">
                         <MDBCardText className={`mt-3 ${mode} rounded p-3`}>
                           We've all seen the finance tracker. I won't blow any
