@@ -31,10 +31,10 @@ export default function App() {
               <MDBNavbarLink href="#header__container">HOME</MDBNavbarLink>
             </MDBNavbarItem>
             <MDBNavbarItem>
-              <MDBNavbarLink href="#about__container">ABOUT</MDBNavbarLink>
+              <MDBNavbarLink href="#about__title">ABOUT</MDBNavbarLink>
             </MDBNavbarItem>
             <MDBNavbarItem>
-              <MDBNavbarLink href="#project__container">
+              <MDBNavbarLink href="#project__container__inner">
                 PORTFOLIO
               </MDBNavbarLink>
             </MDBNavbarItem>
