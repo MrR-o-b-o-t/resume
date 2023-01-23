@@ -1,0 +1,23 @@
+#footer__container {
+  min-height: 250px;
+  background-color: #495057;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__btn {
+  background-color: #6c757d;
+  border: none;
+  padding: 10px 15px 10px 15px;
+  color: #ffffff;
+  transition: 0.5s ease-in;
+}
+
+.footer__btn:hover {
+  background-color: #00b4d8;
+}
+
+P {
+  color: #ffffff;
+}
