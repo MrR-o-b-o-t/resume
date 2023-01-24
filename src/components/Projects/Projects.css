@@ -1,11 +1,11 @@
-.project__container {
-  /* background-color: #eaeaea; */
-  background-image: url("../../images/coding.jpg");
+/* .project__container {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
+  width: 100%;
+  height: 100%;
+} */
 
 #project__container__inner {
   width: 100%;
