@@ -88,13 +88,14 @@ export default function Projects() {
                         <MDBCardBody className="text-center">
                           <MDBCardText className={`mt-3 ${mode} rounded p-3`}>
                             Built for Bank of England Texas using React JS,
-                            Redux, Node.js, MDBReact, JavaScript, GSAP, and CSS.
+                            JavaScript, CSS3, Redux, Node.js, MDBReact, and GSAP
+                            for animations.
                             <br />
                             <br />
-                            This was my first industry level project. As a
-                            junior developer and working solo it presented many
-                            challenges and many learning oppurtunites. It
-                            provided me the oppurtunity to take a deep dive into
+                            This was my first industry-level project. As a
+                            junior developer working solo, this presented many
+                            challenges and many learning opportunities. It
+                            provided me the opportunity to take a deep dive into
                             React, Redux, Node, MDBReact, and Git for version
                             control.
                             <br />
@@ -162,17 +163,16 @@ export default function Projects() {
                             CSS, and a few npm packages for the frontend. The
                             backend is handled using FireBase.
                             <br />
-                            <br />I built this application for me and my team
-                            members to keep track of bugs and other tasks. I
-                            took inspiration from a Jira board my team used
+                            <br />
+                            I took inspiration from a Jira board my team used
                             during my day job. Users are able to create a
                             profile and login with FireBase. Data for projects
                             are also stored with FireBase and can be dynamically
-                            displayed on a users dashboard depending on that
-                            persons user rights. Users can see which developers
+                            displayed on a user's dashboard depending on that
+                            person's user rights. Users can see which developers
                             are online in real time and add comments under
-                            individual tasks. Task can be completed and removed
-                            but only by the user who created the task.
+                            individual tasks. A task can be completed and
+                            removed but only by the user who created the task.
                             <br />
                             <br />
                             <a
@@ -234,14 +234,15 @@ export default function Projects() {
                             smoke, this one isn't much different.
                             <br />
                             <br />I built this application while learning how to
-                            use Firebase and learning the Ant Design library.
-                            It's fairly simple in that users can login, logout,
-                            signup, and add and delete items from their account.
-                            Users can only view, add, and delete data they have
-                            added to their account. Although it was a strait
-                            forward project it still took me several weeks to
-                            complete. Writing the custom hooks, actions, and
-                            learning the Firebase hooks took some time.
+                            use Firebase and learning the Ant Design Library.
+                            It's fairly simple in that users can log in, log
+                            out, signup, and add and delete items from their
+                            accounts. Users can only view, add, and delete data
+                            they have added to their accounts. Although it was a
+                            straightforward project it still took me several
+                            weeks to complete. Writing the custom hooks, and
+                            actions, and learning the Firebase hooks took some
+                            time.
                             <br />
                             <br />
                             <a
