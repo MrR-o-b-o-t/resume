@@ -1,12 +1,20 @@
 import "./About.css";
+
+// Image Imports
 import React from "react";
 import rocket from "../../images/rocket.png";
 import responsive from "../../images/responsive.png";
 import intuitive from "../../images/intuitive.png";
 import dynamic from "../../images/dynamic.png";
 import headshot from "../../images/headshot.jpg";
+
+// React Reveal Motion Import
 import Fade from "react-reveal/Fade";
+
+// Bootstrap Import
 import { Row, Container, Col } from "react-bootstrap";
+
+// React Icon Imports
 import {
   DiNodejs,
   DiReact,
@@ -15,8 +23,11 @@ import {
   DiCss3Full,
   DiGit,
   DiHtml5,
-  DiJava,
 } from "react-icons/di";
+
+import { SiExpress, SiRedux, SiMongodb, SiPostman } from "react-icons/si";
+
+// Theme Hook Import
 import { useTheme } from "../../hooks/useTheme";
 
 export default function About() {
@@ -70,17 +81,21 @@ export default function About() {
       <Container>
         <Row around id="skills__row">
           <Col size="md" className="text-center">
-            <img
-              className="img-fluid rounded-pill"
-              id="headshot"
-              src={headshot}
-              alt="headshot"
-            />
-            <h2 className="mt-2">Who am I?</h2>
+            <Fade up delay={200}>
+              <img
+                className="img-fluid rounded-pill"
+                id="headshot"
+                src={headshot}
+                alt="headshot"
+              />
+            </Fade>
+            <h2 className="mt-3">Who am I?</h2>
+            <p>I'm a Full Stack Developer.</p>
             <p>
-              I'm a Front End Developer. I'm passionate about creating
-              intuitive, dynamic, & responsive user experiences.
+              I'm passionate about creating intuitive, dynamic, & responsive
+              user experiences.
             </p>
+            <h2 className="mt-5">Some of my skills include:</h2>
           </Col>
         </Row>
         <div className="mt-5">
@@ -93,8 +108,8 @@ export default function About() {
             </Col>
             <Col xs={6} md={3} className="text-center mb-5">
               <Fade delay={300}>
-                <DiJava color="#f89820" className="FaStyles" />
-                <h2>Java</h2>
+                <SiExpress color="#383838" className="FaStyles" />
+                <h2>Express</h2>
               </Fade>
             </Col>
             <Col xs={6} md={3} className="text-center mb-5">
@@ -131,6 +146,24 @@ export default function About() {
               <Fade delay={1500}>
                 <DiGit color="#F1502F" className="FaStyles" />
                 <h2>Git</h2>
+              </Fade>
+            </Col>
+            <Col xs={6} md={3} className="text-center mb-5">
+              <Fade delay={1700}>
+                <SiRedux color="#6b096b" className="FaStyles" />
+                <h2>Redux</h2>
+              </Fade>
+            </Col>
+            <Col xs={6} md={3} className="text-center mb-5">
+              <Fade delay={1900}>
+                <SiMongodb color="#096b09" className="FaStyles" />
+                <h2>MongoDB</h2>
+              </Fade>
+            </Col>
+            <Col xs={6} md={3} className="text-center mb-5">
+              <Fade delay={2100}>
+                <SiPostman color="#d78f0d" className="FaStyles" />
+                <h2>Postman</h2>
               </Fade>
             </Col>
           </Row>

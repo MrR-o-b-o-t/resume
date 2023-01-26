@@ -159,9 +159,9 @@ export default function Projects() {
                         <MDBCardBody className="text-center">
                           <MDBCardText className={`mt-3 ${mode} rounded p-3`}>
                             Built for myself and fellow devs working on projects
-                            in our free time using React.js, Node.js, MUIReact,
-                            CSS, and a few npm packages for the frontend. The
-                            backend is handled using FireBase.
+                            in our free time using React.js, Node.js, Express,
+                            MUIReact, CSS, and a few npm packages for the
+                            frontend. The backend is handled using FireBase.
                             <br />
                             <br />
                             I took inspiration from a Jira board my team used
